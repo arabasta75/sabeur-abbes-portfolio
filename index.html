@@ -402,6 +402,25 @@
     }
     #map { width: 100%; height: 100%; }
 
+    /* ─── SUBSTACK ───────────────────────────────────── */
+    #newsletter { text-align: center; border-top: 1px solid var(--border); }
+    .newsletter-over {
+      font-family: var(--ff-mono); font-size: .72rem; color: var(--accent);
+      letter-spacing: 6px; text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    .newsletter-hl {
+      font-family: var(--ff-display); font-weight: 700; letter-spacing: -1.5px;
+      font-size: clamp(1.8rem, 4vw, 3rem); line-height: 1.1; margin-bottom: 1rem;
+    }
+    .newsletter-sub {
+      color: var(--muted); font-size: 1rem; max-width: 480px;
+      margin: 0 auto 2.5rem;
+    }
+    .substack-wrap iframe {
+      max-width: 100%; border-radius: 4px;
+      filter: invert(1) hue-rotate(180deg) brightness(.88) saturate(1.2);
+    }
+
     /* ─── CONTACT ────────────────────────────────────── */
     #contact { background: var(--surface); border-top: 1px solid var(--border); text-align: center; }
     .contact-over {
@@ -924,6 +943,21 @@
   </section>
 
   <!-- CONTACT -->
+  <section id="newsletter" class="section">
+    <p class="newsletter-over" data-fr="— Analyse & Décryptage —" data-en="— Analysis & Intelligence —">— Analyse & Décryptage —</p>
+    <h2 class="newsletter-hl reveal"
+        data-fr="L'intelligence narrative, chaque semaine."
+        data-en="Narrative intelligence, every week.">L'intelligence narrative, chaque semaine.</h2>
+    <p class="newsletter-sub reveal"
+       data-fr="Géopolitique, influence et guerre de l'information — sans filtre."
+       data-en="Geopolitics, influence and information warfare — unfiltered.">Géopolitique, influence et guerre de l'information — sans filtre.</p>
+    <div class="substack-wrap reveal">
+      <iframe src="https://sabeura.substack.com/embed" width="480" height="320"
+              style="border:1px solid #EEE; background:white"
+              frameborder="0" scrolling="no"></iframe>
+    </div>
+  </section>
+
   <section id="contact" class="section">
     <p class="contact-over" data-fr="— Travaillons ensemble —" data-en="— Let's work together —">— Travaillons ensemble —</p>
     <h2 class="contact-hl reveal">
